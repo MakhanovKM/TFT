@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"tft_480_320\startup_stm32f103xb.o"
+"tft_480_320\hx8357.o"
+"tft_480_320\main.o"
+"tft_480_320\stm32f1xx_it.o"
+"tft_480_320\stm32f1xx_hal_msp.o"
+"tft_480_320\stm32f1xx_hal_gpio_ex.o"
+"tft_480_320\stm32f1xx_hal_tim.o"
+"tft_480_320\stm32f1xx_hal_tim_ex.o"
+"tft_480_320\stm32f1xx_hal.o"
+"tft_480_320\stm32f1xx_hal_rcc.o"
+"tft_480_320\stm32f1xx_hal_rcc_ex.o"
+"tft_480_320\stm32f1xx_hal_gpio.o"
+"tft_480_320\stm32f1xx_hal_dma.o"
+"tft_480_320\stm32f1xx_hal_cortex.o"
+"tft_480_320\stm32f1xx_hal_pwr.o"
+"tft_480_320\stm32f1xx_hal_flash.o"
+"tft_480_320\stm32f1xx_hal_flash_ex.o"
+"tft_480_320\stm32f1xx_hal_exti.o"
+"tft_480_320\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "TFT_480_320\TFT_480_320.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TFT_480_320.map" -o TFT_480_320\TFT_480_320.axf
